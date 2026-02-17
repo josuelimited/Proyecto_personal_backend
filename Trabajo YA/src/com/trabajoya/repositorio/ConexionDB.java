@@ -6,7 +6,7 @@ import java.sql.SQLException;
 
 public class ConexionDB {
     // URL con el nombre exacto de la base de datos que vimos en tu foto
-    private static final String URL = "jdbc:mysql://localhost:3306/Proyecto_personal";
+    private static final String URL = "jdbc:mysql://localhost:3306/TRABAJO_YA";
     private static final String USUARIO = "root";
     private static final String CLAVE = "#Aprendiz2024"; // Lo dejamos vacío porque entra sin contraseña
 
