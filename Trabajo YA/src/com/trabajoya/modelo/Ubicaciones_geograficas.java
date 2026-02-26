@@ -1,17 +1,17 @@
 package com.trabajoya.modelo;
 
-public class ubicaciones_geograficas {
+public class Ubicaciones_geograficas {
     // Atributos basados en tu SQL (id_ubicacion, nombre_ubicacion, tipo_ubicacion)
     private int idUbicacion;
     private String nombreUbicacion;
     private String tipoUbicacion; // Representa el ENUM ('pais', 'departamento', 'ciudad')
 
     // Constructor vacío
-    public ubicaciones_geograficas() {
+    public Ubicaciones_geograficas() {
     }
 
     // Constructor con parámetros
-    public ubicaciones_geograficas(int idUbicacion, String nombreUbicacion, String tipoUbicacion) {
+    public Ubicaciones_geograficas(int idUbicacion, String nombreUbicacion, String tipoUbicacion) {
         this.idUbicacion = idUbicacion;
         this.nombreUbicacion = nombreUbicacion;
         this.tipoUbicacion = tipoUbicacion;

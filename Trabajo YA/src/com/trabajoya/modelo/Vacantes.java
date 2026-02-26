@@ -2,7 +2,7 @@ package com.trabajoya.modelo;
 
 import java.util.Date;
 
-public class vacantes {
+public class Vacantes {
     // Atributos basados en tu SQL
     private int idVacantes;
     private int idEmpleador;
@@ -18,11 +18,11 @@ public class vacantes {
     private Date fechaCierre;
 
     // Constructor vacío
-    public vacantes() {
+    public Vacantes() {
     }
 
     // Constructor con parámetros
-    public vacantes(int idVacantes, int idEmpleador, int idUbicacionCiudad, int cantPostulacion,
+    public Vacantes(int idVacantes, int idEmpleador, int idUbicacionCiudad, int cantPostulacion,
                     int idTipoTrabajo, boolean estadoVacante, String titulo, String descripcion,
                     double salario, String horario, Date fechaPublicacion, Date fechaCierre) {
         this.idVacantes = idVacantes;

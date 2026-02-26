@@ -1,6 +1,6 @@
 package com.trabajoya.dao;
 
-import com.trabajoya.modelo.candidatos;
+import com.trabajoya.modelo.Candidatos;
 import com.trabajoya.repositorio.ConexionDB;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -10,7 +10,7 @@ import java.sql.SQLException;
 public class Candidato_DAO {
 
     // 1. REGISTRAR PERFIL DE CANDIDATO
-    public boolean registrar(candidatos candidato) {
+    public boolean registrar(Candidatos candidato) {
         String sql = "INSERT INTO candidatos (id_usuario, estado_candidato, habilidades, experiencia, curriculum) VALUES (?, ?, ?, ?, ?)";
 
         try (Connection con = ConexionDB.obtenerConexion();
@@ -31,7 +31,7 @@ public class Candidato_DAO {
     }
 
     // 2. BUSCAR CANDIDATO POR ID DE USUARIO
-    public candidatos buscarPorUsuario(int idUsuario) {
+    public Candidatos buscarPorUsuario(int idUsuario) {
         String sql = "SELECT * FROM candidatos WHERE id_usuario = ?";
 
         try (Connection con = ConexionDB.obtenerConexion();
@@ -40,7 +40,7 @@ public class Candidato_DAO {
             ps.setInt(1, idUsuario);
             try (ResultSet rs = ps.executeQuery()) {
                 if (rs.next()) {
-                    candidatos c = new candidatos();
+                    Candidatos c = new Candidatos();
                     c.setIdCandidato(rs.getInt("id_candidato"));
                     c.setIdUsuario(rs.getInt("id_usuario"));
                     c.setEstadoCandidato(rs.getBoolean("estado_candidato"));

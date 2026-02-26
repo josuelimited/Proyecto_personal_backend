@@ -1,16 +1,16 @@
 package com.trabajoya.modelo;
 
-public class tipo_de_trabajo {
+public class Tipo_de_trabajo {
     // Atributos basados en tu SQL (id_tipo_trabajo, tipo_trabajo)
     private int idTipoTrabajo;
     private String tipoTrabajo;
 
     // Constructor vacío
-    public tipo_de_trabajo() {
+    public Tipo_de_trabajo() {
     }
 
     // Constructor con parámetros
-    public tipo_de_trabajo(int idTipoTrabajo, String tipoTrabajo) {
+    public Tipo_de_trabajo(int idTipoTrabajo, String tipoTrabajo) {
         this.idTipoTrabajo = idTipoTrabajo;
         this.tipoTrabajo = tipoTrabajo;
     }

@@ -1,6 +1,6 @@
 package com.trabajoya.modelo;
 
-public class empleadores {
+public class Empleadores {
     // Atributos basados en tu SQL (id_empleador, id_usuario, nombre_trabajo, descripcion_trabajo, TELEFONO_trabajo)
     private int idEmpleador;
     private int idUsuario; // Llave foránea que conecta con la tabla usuario
@@ -9,11 +9,11 @@ public class empleadores {
     private String telefonoTrabajo;
 
     // Constructor vacío
-    public empleadores() {
+    public Empleadores() {
     }
 
     // Constructor con parámetros
-    public empleadores(int idEmpleador, int idUsuario, String nombreTrabajo, String descripcionTrabajo, String telefonoTrabajo) {
+    public Empleadores(int idEmpleador, int idUsuario, String nombreTrabajo, String descripcionTrabajo, String telefonoTrabajo) {
         this.idEmpleador = idEmpleador;
         this.idUsuario = idUsuario;
         this.nombreTrabajo = nombreTrabajo;

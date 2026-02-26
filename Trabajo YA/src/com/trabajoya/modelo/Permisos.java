@@ -1,17 +1,17 @@
 package com.trabajoya.modelo;
 
-public class permisos {
+public class Permisos {
     // Atributos basados en tu SQL (id_permiso, nombre_permiso, descripcion)
     private int idPermiso;
     private String nombrePermiso;
     private String descripcion;
 
     // Constructor vacío
-    public permisos() {
+    public Permisos() {
     }
 
     // Constructor con parámetros
-    public permisos(int idPermiso, String nombrePermiso, String descripcion) {
+    public Permisos(int idPermiso, String nombrePermiso, String descripcion) {
         this.idPermiso = idPermiso;
         this.nombrePermiso = nombrePermiso;
         this.descripcion = descripcion;
